@@ -104,6 +104,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> jekyll/master
@@ -213,6 +214,8 @@ module Jekyll
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> origin/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> jekyll/0.12.1-release
 =======

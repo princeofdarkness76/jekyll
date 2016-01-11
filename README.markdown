@@ -9,8 +9,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 By Tom Preston-Werner, Nick Quaranto, Parker Moore, and many [awesome contributors](https://github.com/jekyll/jekyll/graphs/contributors)!
 =======
+=======
+>>>>>>> origin/v1-stable
 =======
 >>>>>>> origin/v1-stable
 [![Build Status](https://secure.travis-ci.org/jekyll/jekyll.png?branch=master)](https://travis-ci.org/jekyll/jekyll)
@@ -18,7 +21,10 @@ By Tom Preston-Werner, Nick Quaranto, Parker Moore, and many [awesome contributo
 [![Dependency Status](https://gemnasium.com/jekyll/jekyll.png)](https://gemnasium.com/jekyll/jekyll)
 [![Coverage Status](https://coveralls.io/repos/jekyll/jekyll/badge.png)](https://coveralls.io/r/jekyll/jekyll)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/v1-stable
+=======
+>>>>>>> origin/v1-stable
 =======
 >>>>>>> origin/v1-stable
 
@@ -38,10 +44,14 @@ See: http://jekyllrb.com/docs/troubleshooting/#jekyll-amp-mac-os-x-1011
 * Read up about its [Usage](http://jekyllrb.com/docs/usage/) and [Configuration](http://jekyllrb.com/docs/configuration/)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Take a gander at some existing [Sites](https://wiki.github.com/jekyll/jekyll/sites)
 =======
 * Take a gander at some existing [Sites](http://wiki.github.com/jekyll/jekyll/sites)
 >>>>>>> jekyll/v1-stable
+=======
+* Take a gander at some existing [Sites](http://wiki.github.com/jekyll/jekyll/sites)
+>>>>>>> origin/v1-stable
 =======
 * Take a gander at some existing [Sites](http://wiki.github.com/jekyll/jekyll/sites)
 >>>>>>> origin/v1-stable

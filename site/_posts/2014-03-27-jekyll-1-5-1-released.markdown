@@ -21,10 +21,14 @@ Well, we can't have that! In 1.5.1, you'll instead see:
 > sanitized_path("/tmp/foobar/jail", "..c:/..c:/..c:/etc/passwd")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 => "/tmp/foobar/jail/..c:/..c:/..c:/etc/passwd"
 =======
 => "/tmp/foobar/jail/etc/passwd"
 >>>>>>> jekyll/v1-stable
+=======
+=> "/tmp/foobar/jail/etc/passwd"
+>>>>>>> origin/v1-stable
 =======
 => "/tmp/foobar/jail/etc/passwd"
 >>>>>>> origin/v1-stable

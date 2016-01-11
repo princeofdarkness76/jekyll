@@ -142,6 +142,7 @@ module Jekyll
     def destination(dest)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       path = site.in_dest_dir(dest, URL.unescape_path(url))
       path = File.join(path, "index") if url.end_with?("/")
 <<<<<<< HEAD
@@ -189,6 +190,10 @@ module Jekyll
 =======
       path << output_ext unless path.end_with? output_ext
 >>>>>>> jekyll/master
+=======
+      path = Jekyll.sanitized_path(dest, url)
+      path = File.join(path, "index.html") if url =~ /\/$/
+>>>>>>> origin/v1-stable
       path
     end
 

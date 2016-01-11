@@ -2,10 +2,14 @@ require 'helper'
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class TestPathSanitization < JekyllUnitTest
 =======
 class TestPathSanitization < Test::Unit::TestCase
 >>>>>>> jekyll/v1-stable
+=======
+class TestPathSanitization < Test::Unit::TestCase
+>>>>>>> origin/v1-stable
 =======
 class TestPathSanitization < Test::Unit::TestCase
 >>>>>>> origin/v1-stable
@@ -15,10 +19,14 @@ class TestPathSanitization < Test::Unit::TestCase
       @dest   = "./_site/"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(Dir).to receive(:pwd).and_return("C:/Users/xmr/Desktop/mpc-hc.org")
 =======
       stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
 >>>>>>> jekyll/v1-stable
+=======
+      stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
+>>>>>>> origin/v1-stable
 =======
       stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
 >>>>>>> origin/v1-stable

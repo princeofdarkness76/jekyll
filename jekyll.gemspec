@@ -53,6 +53,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   s.version           = '0.12.1'
   s.license           = 'MIT'
   s.date              = '2013-02-19'
@@ -111,6 +112,11 @@ Gem::Specification.new do |s|
   s.license           = 'MIT'
   s.date              = '2013-07-25'
 >>>>>>> jekyll/1.0-branch
+=======
+  s.version           = '1.0.4'
+  s.license           = 'MIT'
+  s.date              = '2013-07-25'
+>>>>>>> origin/1.0-branch
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -130,8 +136,11 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> jekyll/1.0-branch
+=======
+>>>>>>> origin/1.0-branch
   s.add_runtime_dependency('liquid', "~> 2.5.1")
   s.add_runtime_dependency('classifier', "~> 1.3")
   s.add_runtime_dependency('directory_watcher', "~> 1.4.1")

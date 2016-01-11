@@ -1,6 +1,7 @@
 ## 1.0.4 / 2013-07-24
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ### Minor Enhancements
@@ -1426,6 +1427,11 @@
   * Latest posts first in non-LSI `related_posts` (#1271)
 
 ### Development Fixes
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> origin/1.0-branch
 
   * Merge the theme and layout Cucumber steps into one step (#1151)
   * Restrict activesupport dependency to pre-4.0.0 to maintain compatibility with `<= 1.9.2`

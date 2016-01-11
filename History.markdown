@@ -1,5 +1,6 @@
 ## 1.0.4 / 2013-07-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ### Minor Enhancements
@@ -1332,6 +1333,11 @@
   * Provide proper error handling for invalid file names in the include tag (#1494)
 
 ### Development Fixes
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> jekyll/1.0-branch
 
   * Remove redundant argument to Jekyll::Commands::New#scaffold_post_content (#1356)
   * Add new dependencies to the README (#1360)

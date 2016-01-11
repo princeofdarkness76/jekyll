@@ -1,7 +1,10 @@
 markdown: kramdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 highlighter: pygments
 =======
+=======
+>>>>>>> jekyll/use-rouge
 highlighter: rouge
 relative_permalinks: false
 >>>>>>> origin/use-rouge

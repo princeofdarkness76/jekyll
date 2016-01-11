@@ -49,6 +49,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   s.version           = '0.12.1'
   s.license           = 'MIT'
   s.date              = '2013-02-19'
@@ -82,6 +83,11 @@ Gem::Specification.new do |s|
   s.license           = 'MIT'
   s.date              = '2014-03-27'
 >>>>>>> origin/v1-stable
+=======
+  s.version           = '0.12.1'
+  s.license           = 'MIT'
+  s.date              = '2013-02-19'
+>>>>>>> jekyll/0.12.1-release
 =======
   s.version           = '0.12.1'
   s.license           = 'MIT'
@@ -134,6 +140,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   s.add_development_dependency('shoulda', "~> 3.3.2")
   s.add_development_dependency('rr', "~> 1.0")
   s.add_development_dependency('cucumber', "~> 1.2.1")
@@ -157,6 +164,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rr', "~> 1.1")
   s.add_development_dependency('cucumber', "1.3.11")
 >>>>>>> origin/v1-stable
+=======
+  s.add_development_dependency('shoulda', "~> 3.3.2")
+  s.add_development_dependency('rr', "~> 1.0")
+  s.add_development_dependency('cucumber', "~> 1.2.1")
+>>>>>>> jekyll/0.12.1-release
 =======
   s.add_development_dependency('shoulda', "~> 3.3.2")
   s.add_development_dependency('rr', "~> 1.0")

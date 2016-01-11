@@ -57,7 +57,10 @@ module Jekyll
 
           Jekyll.logger.info "Server address:", server_address_info(s, options)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/change-default-listening-host
+=======
+>>>>>>> origin/change-default-listening-host
 =======
 >>>>>>> origin/change-default-listening-host
 

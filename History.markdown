@@ -54,6 +54,10 @@
   * Implement codeclimate platform (#4340)
   * Remove ObectSpace dumping and start using inherited, it's faster. (#4342)
   * Add script/travis so all people can play with Travis-CI images. (#4338)
+<<<<<<< HEAD
+=======
+  * Move Cucumber to using RSpec-Expections and furthering JRuby support. (#4343)
+>>>>>>> jekyll/master
 
 ### Site Enhancements
 
@@ -1121,6 +1125,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> jekyll/master
 =======
 >>>>>>> jekyll/master
 =======
@@ -1460,6 +1467,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   * Add information about time zones to the documentation for a page's
     date (#1304)
 =======
@@ -1467,6 +1475,9 @@
 ### Bug Fixes
   * Require Liquid 2.5.1 (#1349)
 >>>>>>> origin/1.0-branch
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
 =======
   * Add information about time zones to the documentation for a page's date (#1304)
 >>>>>>> jekyll/master

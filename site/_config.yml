@@ -27,5 +27,8 @@ url: http://jekyllrb.com
 gems:
   - jekyll-feed
   - jekyll-redirect-from
+<<<<<<< HEAD
 - langcode: {the_lang_code}
   lang_string: {the_link_string}
+=======
+>>>>>>> jekyll/master

@@ -99,7 +99,10 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> jekyll/master
 =======
 >>>>>>> jekyll/master
 =======
@@ -358,6 +361,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
   # Get a subpath without any of the traversal nonsense.
@@ -384,6 +388,8 @@ module Jekyll
     else
       clean_path
     end
+=======
+>>>>>>> jekyll/master
 =======
 >>>>>>> jekyll/master
 =======

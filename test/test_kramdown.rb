@@ -127,6 +127,7 @@ class TestKramdown < JekyllUnitTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> origin/0.12.1-release
@@ -140,6 +141,8 @@ class TestKramdown < JekyllUnitTest
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> origin/0.12.1-release
     end
   end
 end

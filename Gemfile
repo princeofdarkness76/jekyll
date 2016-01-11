@@ -85,7 +85,7 @@ source "https://rubygems.org"
 gemspec
 >>>>>>> jekyll/0.12.1-release
 source 'https://rubygems.org'
-
+m
 require 'json'
 require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)

@@ -29,6 +29,12 @@ module Jekyll
         end
       end
 
+      class << self
+        def source_cache
+          @@source_cache ||= {}
+        end
+      end
+
       def initialize(tag_name, markup, tokens)
         super
         matched = markup.strip.match(VARIABLE_SYNTAX)
@@ -222,6 +228,7 @@ eos
       # This method allows to modify the file content by inheriting from the class.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       def read_file(file, context)
         File.read(file, file_read_opts(context))
 =======
@@ -232,6 +239,10 @@ eos
       def source(file, context)
         self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
 >>>>>>> origin/cache-includes
+=======
+      def source(file, context)
+        self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
+>>>>>>> jekyll/cache-includes
       end
     end
 

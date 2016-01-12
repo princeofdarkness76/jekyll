@@ -51,6 +51,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,6 +148,11 @@ Gem::Specification.new do |s|
   s.license           = 'MIT'
   s.date              = '2013-07-25'
 >>>>>>> jekyll/1.0-branch
+=======
+  s.version           = '1.5.1'
+  s.license           = 'MIT'
+  s.date              = '2014-03-27'
+>>>>>>> jekyll/v1-stable
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -163,6 +169,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.extra_rdoc_files = %w[README.textile LICENSE]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +199,8 @@ Gem::Specification.new do |s|
 =======
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+>>>>>>> jekyll/v1-stable
   s.add_runtime_dependency('liquid', "~> 2.5.5")
   s.add_runtime_dependency('classifier', "~> 1.3")
   s.add_runtime_dependency('listen', "~> 1.3")
@@ -213,6 +222,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -282,6 +292,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rr', "~> 1.0")
   s.add_development_dependency('cucumber', "~> 1.2.1")
 >>>>>>> origin/0.12.1-release
+=======
+  s.add_development_dependency('shoulda', "~> 3.5")
+  s.add_development_dependency('rr', "~> 1.1")
+  s.add_development_dependency('cucumber', "1.3.11")
+>>>>>>> jekyll/v1-stable
   s.add_development_dependency('RedCloth', "~> 4.2")
   s.add_development_dependency('rdiscount', "~> 1.6")
   s.add_development_dependency('redcarpet', "~> 2.2.2")

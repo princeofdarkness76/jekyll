@@ -90,6 +90,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -335,6 +336,9 @@ module Jekyll
 =======
   VERSION = '1.0.4'
 >>>>>>> jekyll/1.0-branch
+=======
+  VERSION = '1.5.1'
+>>>>>>> jekyll/v1-stable
 
   # Public: Generate a Jekyll configuration Hash by merging the default
   # options with anything in _config.yml, and adding the given options on top.
@@ -460,6 +464,19 @@ module Jekyll
 >>>>>>> jekyll/master
 =======
 >>>>>>> jekyll/master
+  end
+
+  # Get a subpath without any of the traversal nonsense.
+  #
+  # Returns a pure and clean path
+  def self.sanitized_path(base_directory, questionable_path)
+    clean_path = File.expand_path(questionable_path, "/")
+    clean_path.gsub!(/\A\w\:\//, '/')
+    unless clean_path.start_with?(base_directory)
+      File.join(base_directory, clean_path)
+    else
+      clean_path
+    end
   end
 
   # Get a subpath without any of the traversal nonsense.

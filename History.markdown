@@ -323,6 +323,7 @@
 
 ### Site Enhancements
 
+<<<<<<< HEAD
   * Add 'info' labels to certain notes in collections docs (#3601)
   * Remove extra spaces, make the last sentence less awkward in permalink docs (#3603)
   * Update the permalinks documentation to reflect the updates for 3.0 (#3556)
@@ -1150,6 +1151,8 @@
 <<<<<<< HEAD
   * Don't allow nil entries when loading posts (#1796)
 
+=======
+>>>>>>> jekyll/v1-stable
 ## 1.5.1 / 2014-03-27
 
 ### Bug Fixes
@@ -1181,12 +1184,16 @@
 ## 1.4.2 / 2013-12-16
 
 ### Bug Fixes
+<<<<<<< HEAD
 
+=======
+>>>>>>> jekyll/v1-stable
   * Turn on Maruku fenced code blocks by default (#1830)
 
 ## 1.4.1 / 2013-12-09
 
 ### Bug Fixes
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1209,6 +1216,8 @@
 >>>>>>> jekyll/master
 =======
 >>>>>>> origin/v1-stable
+=======
+>>>>>>> jekyll/v1-stable
   * Don't allow nil entries when loading posts (#1796)
 
 ## 1.4.0 / 2013-12-07

@@ -72,6 +72,7 @@ Feature: Markdown
     And I should see "My awesome string" in "_site/index.html"
     And I should see "<pre class="ruby"><code class="ruby">\nputs &quot;My awesome string&quot;\n</code></pre>" in "_site/index.html"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/v1-stable
 =======
 <<<<<<< HEAD
@@ -82,3 +83,5 @@ Feature: Markdown
 =======
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+>>>>>>> jekyll/v1-stable

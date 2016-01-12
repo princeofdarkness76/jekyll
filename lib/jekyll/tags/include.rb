@@ -142,9 +142,12 @@ eos
       def render(context)
         dir = File.join(File.realpath(context.registers[:site].source), INCLUDES_DIR)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/v1-stable
 =======
 >>>>>>> origin/v1-stable
+=======
+>>>>>>> jekyll/v1-stable
 
       def render(context)
 <<<<<<< HEAD
@@ -159,6 +162,7 @@ eos
         validate_file_name(file)
 
         path = File.join(dir, file)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -186,6 +190,9 @@ eos
         validate_path(path, dir, context.registers[:site].safe)
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+        validate_path(path, dir, context.registers[:site].safe)
+>>>>>>> jekyll/v1-stable
 
         begin
           partial = load_cached_partial(path, context)
@@ -199,6 +206,7 @@ eos
         end
       end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -264,6 +272,18 @@ eos
         elsif !File.exist?(path)
           raise IOError.new "Included file '#{path}' not found"
         end
+=======
+      def validate_path(path, dir, safe)
+        if safe && !realpath_prefixed_with?(path, dir)
+          raise IOError.new "The included file '#{path}' should exist and should not be a symlink"
+        elsif !File.exist?(path)
+          raise IOError.new "Included file '#{path}' not found"
+        end
+      end
+
+      def realpath_prefixed_with?(path, dir)
+        File.exist?(path) && File.realpath(path).start_with?(dir)
+>>>>>>> jekyll/v1-stable
       end
 
       def realpath_prefixed_with?(path, dir)

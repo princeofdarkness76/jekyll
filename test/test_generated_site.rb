@@ -14,6 +14,7 @@ class TestGeneratedSite < JekyllUnitTest
     should "ensure post count is as expected" do
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       assert_equal 49, @site.posts.size
 =======
 <<<<<<< HEAD
@@ -72,6 +73,9 @@ class TestGeneratedSite < JekyllUnitTest
       assert_equal 37, @site.posts.size
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+      assert_equal 37, @site.posts.size
+>>>>>>> jekyll/v1-stable
     end
 
     should "insert site.posts into the index" do

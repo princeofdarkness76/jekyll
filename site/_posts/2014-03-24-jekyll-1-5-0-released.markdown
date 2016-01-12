@@ -18,6 +18,7 @@ Now, back to work on 2.0.0!
 [fun issue with path sanitizing]: https://github.com/jekyll/jekyll/issues/1948
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,3 +36,6 @@ Now, back to work on 2.0.0!
 [history]: /docs/history/#150__20140324
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+[history]: /docs/history/#150__20140324
+>>>>>>> jekyll/v1-stable

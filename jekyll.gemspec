@@ -50,6 +50,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,6 +142,11 @@ Gem::Specification.new do |s|
   s.license           = 'MIT'
   s.date              = '2013-02-19'
 >>>>>>> origin/0.12.1-release
+=======
+  s.version           = '1.0.4'
+  s.license           = 'MIT'
+  s.date              = '2013-07-25'
+>>>>>>> jekyll/1.0-branch
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -159,6 +165,7 @@ Gem::Specification.new do |s|
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -169,6 +176,8 @@ Gem::Specification.new do |s|
 =======
 >>>>>>> origin/1.0-branch
 >>>>>>> pod/jekyll-glynn
+=======
+>>>>>>> jekyll/1.0-branch
   s.add_runtime_dependency('liquid', "~> 2.5.1")
   s.add_runtime_dependency('classifier', "~> 1.3")
   s.add_runtime_dependency('directory_watcher', "~> 1.4.1")

@@ -1,6 +1,7 @@
 ## 1.0.4 / 2013-07-24
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1074,6 +1075,11 @@
   * Lock `maruku` at `0.7.0` (#2167)
 
 ### Development Fixes
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> jekyll/1.0-branch
 
 <<<<<<< HEAD
 <<<<<<< HEAD

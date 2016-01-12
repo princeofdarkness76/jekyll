@@ -89,6 +89,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -331,6 +332,9 @@ module Jekyll
   VERSION = '1.5.1'
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+  VERSION = '1.0.4'
+>>>>>>> jekyll/1.0-branch
 
   # Public: Generate a Jekyll configuration Hash by merging the default
   # options with anything in _config.yml, and adding the given options on top.

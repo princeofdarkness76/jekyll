@@ -59,6 +59,10 @@
 <<<<<<< HEAD
 =======
   * Move Cucumber to using RSpec-Expections and furthering JRuby support. (#4343)
+<<<<<<< HEAD
+>>>>>>> jekyll/master
+=======
+  * Rearrange Cucumber and add some flair. (#4347)
 >>>>>>> jekyll/master
 
 ### Site Enhancements

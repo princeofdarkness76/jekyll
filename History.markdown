@@ -1,5 +1,7 @@
-## HEAD
+## 1.0.4 / 2013-07-24
+<<<<<<< HEAD
 
+<<<<<<< HEAD
 ### Minor Enhancements
 
   * Use `Liquid::Drop`s instead of `Hash`es in `#to_liquid` (#4277)
@@ -486,6 +488,10 @@
   * In the case that a Gemfile does not exist, ensure Jekyll doesn't fail on requiring the Gemfile group (#3066)
 
 ### Development Fixes
+=======
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> jekyll/1.0-branch
 
   * Fix a typo in the doc block for `Jekyll::URL.escape_path` (#3052)
   * Add integration test for `jekyll new --blank` in TestUnit (#2913)
@@ -608,6 +614,7 @@
 
 ### Site Enhancements
 
+<<<<<<< HEAD
   * Use Sass and a Docs Collection (#2651)
   * Add `latest_version.txt` file to the site (#2740)
   * Be more ambiguous about `page.content`. But more transparent. (#2522)
@@ -1007,11 +1014,17 @@
   * Add docs for `where` and `group_by` Liquid filters (#2298)
   * Remove notes in docs for unreleased features (#2309)
 
+=======
+>>>>>>> jekyll/v1-stable
 ## 1.5.1 / 2014-03-27
 
 ### Bug Fixes
 
+<<<<<<< HEAD
   * Only strip the drive name if it begins the string (#2176)
+=======
+* Only strip the drive name if it begins the string (#2176)
+>>>>>>> jekyll/v1-stable
 
 ## 1.5.0 / 2014-03-24
 
@@ -1027,12 +1040,23 @@
 
 ### Development Fixes
 
+<<<<<<< HEAD
   * Lock `cucumber` at `1.3.11` (#2167)
+=======
+  * Lock `cucmber` at `1.3.11` (#2167)
+>>>>>>> jekyll/v1-stable
 
 ## 1.4.3 / 2014-01-13
 
 ### Bug Fixes
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> jekyll/v1-stable
+>>>>>>> pod/jekyll-gemfile
   * Patch show-stopping security vulnerabilities (#1944)
 
 ## 1.4.2 / 2013-12-16
@@ -1364,7 +1388,17 @@
   * Update the S3 deployment documentation (#1294)
   * Add suggestion for Xcode CLT install to troubleshooting page in docs (#1296)
   * Add 'Working with drafts' page to docs (#1289)
+<<<<<<< HEAD
   * Add information about time zones to the documentation for a page's date (#1304)
+=======
+  * Add information about time zones to the documentation for a page's
+    date (#1304)
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> origin/1.0-branch
+>>>>>>> pod/jekyll-gemfile
 
 ## 1.0.3 / 2013-06-07
 

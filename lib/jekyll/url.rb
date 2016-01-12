@@ -77,6 +77,7 @@ module Jekyll
       end
     end
 
+<<<<<<< HEAD
     def generate_url_from_drop(template)
       template.gsub(/:([a-z_]+)/.freeze) do |match|
         replacement = @placeholders.public_send(match.sub(':'.freeze, ''.freeze))
@@ -88,8 +89,18 @@ module Jekyll
       end.gsub(/\/\//.freeze, '/'.freeze)
     end
 
+=======
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-gemfile
     # Returns a sanitized String URL, stripping "../../" and multiples of "/",
     # as well as the beginning "/" so we can enforce and ensure it.
+=======
+    # Returns a sanitized String URL
+    def sanitize_url(in_url)
+
+      # Remove all double slashes
+      url = in_url.gsub(/\/\//, "/")
+>>>>>>> jekyll/v1-stable
 
     def sanitize_url(str)
       "/" + str.gsub(/\/{2,}/, "/").gsub(/\.+\/|\A\/+/, "")
@@ -119,6 +130,7 @@ module Jekyll
       URI.escape(path, /[^a-zA-Z\d\-._~!$&'()*+,;=:@\/]/).encode('utf-8')
     end
 
+<<<<<<< HEAD
     # Unescapes a URL path segment
     #
     # path - The path to be unescaped.
@@ -131,6 +143,12 @@ module Jekyll
     # Returns the unescaped path.
     def self.unescape_path(path)
       URI.unescape(path.encode('utf-8'))
+=======
+      # Always add a leading slash
+      url.gsub!(/\A([^\/])/, '/\1')
+
+      url
+>>>>>>> jekyll/v1-stable
     end
   end
 end

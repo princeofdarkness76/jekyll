@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def jruby?
   defined?(RUBY_ENGINE) && RUBY_ENGINE == 'jruby'
 end
@@ -13,6 +14,11 @@ else
     add_filter ".bundle"
   end
 end
+=======
+require 'rubygems'
+require 'test/unit'
+gem 'RedCloth', '>= 4.2.1'
+>>>>>>> jekyll/0.12.1-release
 
 require "nokogiri"
 require 'rubygems'

@@ -8,7 +8,7 @@ module Jekyll
     attr_accessor :content, :output
 
     YAML_FRONT_MATTER_REGEXP = /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
-    DATELESS_FILENAME_MATCHER = /^(.*)(\.[^.]+)$/
+    DATELESS_FILENAME_MATCHER = /^(.+\/)*(.*)(\.[^.]+)$/
     DATE_FILENAME_MATCHER = /^(.+\/)*(\d+-\d+-\d+)-(.*)(\.[^.]+)$/
 
     # Create a new Document.
@@ -283,6 +283,7 @@ module Jekyll
     end
 
     def post_read
+<<<<<<< HEAD
       if DATE_FILENAME_MATCHER =~ relative_path
         _, _, date, slug, ext = *relative_path.match(DATE_FILENAME_MATCHER)
         merge_data!({
@@ -294,10 +295,23 @@ module Jekyll
       end
       populate_categories
       populate_tags
+=======
+      if relative_path =~ DATE_FILENAME_MATCHER
+        cats, date, slug, ext = $1, $2, $3, $4
+        merge_data!("date" => date) if !data['date'] || data['date'].to_i == site.time.to_i
+        merge_data!("slug" => slug, "ext"  => ext)
+>>>>>>> pod/jekyll-gemfile
 
-      if generate_excerpt?
-        data['excerpt'] ||= Jekyll::Excerpt.new(self)
+      elsif DATELESS_FILENAME_MATCHER =~ relative_path
+        cats, slug, ext = $1, $2, $3
       end
+
+      # Try to ensure the user gets a title.
+      data["title"] ||= Utils.titleize_slug(slug)
+
+      populate_tags
+      populate_categories
+      generate_excerpt
     end
 
     # Add superdirectories of the special_dir to categories.
@@ -424,7 +438,14 @@ module Jekyll
       data.key?(method.to_s) || super
     end
 
-    # Override of method_missing to check in @data for the key.
+    private # :nodoc:
+    def generate_excerpt
+      if generate_excerpt?
+        data["excerpt"] ||= Jekyll::Excerpt.new(self)
+      end
+    end
+
+    private # :nodoc:
     def method_missing(method, *args, &blck)
       if data.key?(method.to_s)
         Jekyll.logger.warn "Deprecation:", "Document##{method} is now a key in the #data hash."

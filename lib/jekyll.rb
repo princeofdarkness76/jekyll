@@ -88,6 +88,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -240,6 +241,8 @@ module Jekyll
 >>>>>>> pod/jekyll-glynn
 =======
 >>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> origin/0.12.1-release
   VERSION = '0.12.1'
 
   # Default options. Overriden by values in _config.yml or command-line opts.

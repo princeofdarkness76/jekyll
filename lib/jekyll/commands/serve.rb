@@ -193,6 +193,7 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,6 +217,8 @@ module Jekyll
 =======
 >>>>>>> origin/add-support-for-webrick-file-precedence
 >>>>>>> pod/jekyll-glynn
+=======
+>>>>>>> origin/add-support-for-webrick-file-precedence
         # Allows files to be routed in a pretty URL in both default format
         # and in custom page/index.html format and while doing so takes into
         # consideration importance of blog.html > blog/ but not > blog/index.html

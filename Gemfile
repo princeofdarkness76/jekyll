@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,6 +85,8 @@ end
 =======
 >>>>>>> origin/0.12.1-release
 <<<<<<< HEAD
+=======
+>>>>>>> jekyll/0.12.1-release
 source "https://rubygems.org"
 gemspec
 >>>>>>> jekyll/0.12.1-release

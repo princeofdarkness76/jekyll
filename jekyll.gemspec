@@ -48,6 +48,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,6 +130,11 @@ Gem::Specification.new do |s|
   s.date              = '2014-03-27'
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+  s.version           = '0.12.1'
+  s.license           = 'MIT'
+  s.date              = '2013-02-19'
+>>>>>>> jekyll/0.12.1-release
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -190,6 +196,7 @@ Gem::Specification.new do |s|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -249,6 +256,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency('cucumber', "1.3.11")
 >>>>>>> origin/v1-stable
 >>>>>>> pod/jekyll-glynn
+=======
+  s.add_development_dependency('shoulda', "~> 3.3.2")
+  s.add_development_dependency('rr', "~> 1.0")
+  s.add_development_dependency('cucumber', "~> 1.2.1")
+>>>>>>> jekyll/0.12.1-release
   s.add_development_dependency('RedCloth', "~> 4.2")
   s.add_development_dependency('rdiscount', "~> 1.6")
   s.add_development_dependency('redcarpet', "~> 2.2.2")

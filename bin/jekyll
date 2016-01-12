@@ -32,6 +32,20 @@ Mercenary.program(:jekyll) do |p|
     end
   end
 
+  %w{jekyll-docs jekyll-import}.each do |blessed_gem|
+    begin
+      require blessed_gem
+    rescue LoadError
+      cmd = blessed_gem.split('-').last
+      p.command(cmd.to_sym) do |c|
+        c.syntax cmd
+        c.action do
+          Jekyll.logger.abort_with "You must install the '#{blessed_gem}' gem to use the 'jekyll #{cmd}' command."
+        end
+      end
+    end
+  end
+
   Jekyll::Command.subclasses.each { |c| c.init_with_program(p) }
 
   p.action do |args, _|

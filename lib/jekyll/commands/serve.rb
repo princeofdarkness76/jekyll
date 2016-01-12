@@ -58,6 +58,7 @@ module Jekyll
           Jekyll.logger.info "Server address:", server_address_info(s, options)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/change-default-listening-host
 =======
 >>>>>>> origin/change-default-listening-host
@@ -69,6 +70,8 @@ module Jekyll
 =======
 >>>>>>> origin/change-default-listening-host
 >>>>>>> pod/jekyll-glynn
+=======
+>>>>>>> origin/change-default-listening-host
 
           server = WEBrick::HTTPServer.new(webrick_opts(opts)).tap { |o| o.unmount("") }
           server.mount(opts["baseurl"], Servlet, destination, file_handler_opts)

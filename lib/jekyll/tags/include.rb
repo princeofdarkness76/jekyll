@@ -43,7 +43,16 @@ module Jekyll
         end
       end
 
+<<<<<<< HEAD
 >>>>>>> pod/jekyll-glynn
+=======
+      class << self
+        def source_cache
+          @@source_cache ||= {}
+        end
+      end
+
+>>>>>>> origin/cache-includes
       def initialize(tag_name, markup, tokens)
         super
         matched = markup.strip.match(VARIABLE_SYNTAX)
@@ -270,6 +279,7 @@ eos
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -295,6 +305,10 @@ eos
         self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
 >>>>>>> origin/cache-includes
 >>>>>>> pod/jekyll-glynn
+=======
+      def source(file, context)
+        self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
+>>>>>>> origin/cache-includes
       end
     end
 

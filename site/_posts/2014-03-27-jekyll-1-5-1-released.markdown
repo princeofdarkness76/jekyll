@@ -20,10 +20,24 @@ Well, we can't have that! In 1.5.1, you'll instead see:
 {% highlight ruby %}
 > sanitized_path("/tmp/foobar/jail", "..c:/..c:/..c:/etc/passwd")
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 => "/tmp/foobar/jail/..c:/..c:/..c:/etc/passwd"
 =======
 => "/tmp/foobar/jail/etc/passwd"
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+=> "/tmp/foobar/jail/etc/passwd"
+>>>>>>> origin/v1-stable
+=======
+=> "/tmp/foobar/jail/etc/passwd"
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 {% endhighlight %}
 
 Luckily not affecting 1.4.x, this fix will make 1.5.0 that much safer for

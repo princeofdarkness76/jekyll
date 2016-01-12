@@ -1,155 +1,167 @@
-require "fileutils"
-require "jekyll/utils"
-require "open3"
-require "time"
+require 'fileutils'
+require 'posix-spawn'
+require 'minitest/spec'
+require 'time'
 
-class Paths
-  SOURCE_DIR = Pathname.new(File.expand_path("../..", __dir__))
-  def self.test_dir; source_dir.join("tmp", "jekyll"); end
-  def self.output_file; test_dir.join("jekyll_output.txt"); end
-  def self.status_file; test_dir.join("jekyll_status.txt"); end
-  def self.jekyll_bin; source_dir.join("bin", "jekyll"); end
-  def self.source_dir; SOURCE_DIR; end
+class MinitestWorld
+  extend Minitest::Assertions
+  attr_accessor :assertions
+
+  def initialize
+    self.assertions = 0
+  end
 end
 
-#
-
-def file_content_from_hash(input_hash)
-  matter_hash = input_hash.reject { |k, v| k == "content" }
-  matter = matter_hash.map do |k, v| "#{k}: #{v}\n"
-  end
-
-  matter = matter.join.chomp
-  content = \
-  if !input_hash['input'] || !input_hash['filter']
-    then input_hash['content']
-    else "{{ #{input_hash['input']} | " \
-      "#{input_hash['filter']} }}"
-  end
-
-  Jekyll::Utils.strip_heredoc(<<-EOF)
-    ---
-    #{matter.gsub(
-      /\n/, "\n    "
-    )}
-    ---
-    #{content}
-  EOF
-end
-
-#
+JEKYLL_SOURCE_DIR = File.dirname(File.dirname(File.dirname(__FILE__)))
+TEST_DIR    = File.expand_path(File.join('..', '..', 'tmp', 'jekyll'), File.dirname(__FILE__))
+JEKYLL_PATH = File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'bin', 'jekyll'))
+JEKYLL_COMMAND_OUTPUT_FILE = File.join(File.dirname(TEST_DIR), 'jekyll_output.txt')
+JEKYLL_COMMAND_STATUS_FILE = File.join(File.dirname(TEST_DIR), 'jekyll_status.txt')
 
 def source_dir(*files)
-  return Paths.test_dir(*files)
+  File.join(TEST_DIR, *files)
 end
-
-#
 
 def all_steps_to_path(path)
-  source = source_dir
-  dest = Pathname.new(path).expand_path
+  source = Pathname.new(source_dir('_site')).expand_path
+  dest   = Pathname.new(path).expand_path
   paths  = []
-
   dest.ascend do |f|
-    break if f == source
+    break if f.eql? source
     paths.unshift f.to_s
   end
+<<<<<<< HEAD:features/support/env.rb
+=======
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+def jekyll_output_file
+  JEKYLL_COMMAND_OUTPUT_FILE
+=======
+>>>>>>> pod/jekyll-glynn:features/support/helpers.rb
   paths
+>>>>>>> jekyll/master
 end
 
-#
+<<<<<<< HEAD
+def jekyll_output_file
+  JEKYLL_COMMAND_OUTPUT_FILE
+end
+
+def jekyll_status_file
+  JEKYLL_COMMAND_STATUS_FILE
+end
 
 def jekyll_run_output
-  if Paths.output_file.file?
-    then return Paths.output_file.read
-  end
+  File.read(jekyll_output_file) if File.file?(jekyll_output_file)
 end
-
-#
 
 def jekyll_run_status
-  if Paths.status_file.file?
-    then return Paths.status_file.read
-  end
+  (File.read(jekyll_status_file) rescue 0).to_i
 end
-
-#
 
 def run_bundle(args)
-  run_in_shell("bundle", *args.strip.split(' '))
+  run_in_shell('bundle', *args.strip.split(' '))
 end
-
-#
 
 def run_jekyll(args)
-  args = args.strip.split(" ") # Shellwords?
-  process = run_in_shell(Paths.jekyll_bin.to_s, *args, "--trace")
-  process.exitstatus == 0
+  child = run_in_shell(JEKYLL_PATH, *args.strip.split(' '), "--trace")
+  child.status.exitstatus == 0
 end
 
-#
+# -----------------------------------------------------------------------------
+# XXX: POSIX::Spawn::Child does not write output when the exit status is > 0
+#        for example when doing [:out, :err] => [file, "w"] it will skip
+#        writing the file entirely, we sould switch to Open.
+# -----------------------------------------------------------------------------
 
 def run_in_shell(*args)
-  i, o, e, p = Open3.popen3(*args)
-  out = o.read.strip
-  err = e.read.strip
-
-  [i, o, e].each do |m|
-    m.close
+  spawned = POSIX::Spawn::Child.new(*args)
+  status = spawned.status.exitstatus
+  File.write(JEKYLL_COMMAND_STATUS_FILE, status)
+  File.open(JEKYLL_COMMAND_OUTPUT_FILE, "w+") do |file|
+    status == 0 ? file.write(spawned.out) : file.write(spawned.err)
   end
 
+<<<<<<< HEAD:features/support/env.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn:features/support/helpers.rb
+  spawned
+=======
+def run_jekyll(opts = {})
+  command = JEKYLL_PATH.clone
+  command << " build --trace"
+  command << " --drafts" if opts[:drafts]
+  command << " >> /dev/null 2>&1" if opts[:debug].nil?
+  system command
+<<<<<<< HEAD:features/support/env.rb
+=======
+end
+
+def call_jekyll_new(opts = {})
+  command = JEKYLL_PATH.clone
+  command << " new --trace"
+  command << " #{opts[:path]}" if opts[:path]
+  command << " --blank" if opts[:blank]
+  command << " >> /dev/null 2>&1" if opts[:debug].nil?
+  system command
+>>>>>>> jekyll/v1-stable
+=======
   File.write(Paths.status_file, p.value.exitstatus)
   File.write(Paths.output_file, out) if p.value.exitstatus == 0
   File.write(Paths.output_file, err) if p.value.exitstatus != 0
   p.value
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn:features/support/helpers.rb
 end
 
-#
+def call_jekyll_new(opts = {})
+  command = JEKYLL_PATH.clone
+  command << " new --trace"
+  command << " #{opts[:path]}" if opts[:path]
+  command << " --blank" if opts[:blank]
+  command << " >> /dev/null 2>&1" if opts[:debug].nil?
+  system command
+>>>>>>> jekyll/v1-stable
+end
 
-def slug(title = nil)
-  if !title
-    then Time.now.strftime("%s%9N") # nanoseconds since the Epoch
-    else title.downcase.gsub(/[^\w]/, " ").strip.gsub(/\s+/, '-')
+def slug(title)
+  if title
+    title.downcase.gsub(/[^\w]/, " ").strip.gsub(/\s+/, '-')
+  else
+    Time.now.strftime("%s%9N") # nanoseconds since the Epoch
   end
 end
-
-#
 
 def location(folder, direction)
   if folder
-    before = folder if direction ==    "in"
-    after  = folder if direction == "under"
+    before = folder if direction == "in"
+    after = folder if direction == "under"
   end
-
-  [before || '.',
-    after || '.']
+  [before || '.', after || '.']
 end
-
-#
 
 def file_contents(path)
-  return Pathname.new(path).read
+  File.open(path) do |file|
+    file.readlines.join # avoid differences with \n and \r\n line endings
+  end
 end
-
-#
 
 def seconds_agnostic_datetime(datetime = Time.now)
   date, time, zone = datetime.to_s.split(" ")
   time = seconds_agnostic_time(time)
-
   [
     Regexp.escape(date),
     "#{time}:\\d{2}",
     Regexp.escape(zone)
-  ] \
-  .join("\\ ")
+  ].join("\\ ")
 end
 
-#
-
 def seconds_agnostic_time(time)
-  time = time.strftime("%H:%M:%S") if time.is_a?(Time)
+  if time.is_a? Time
+    time = time.strftime("%H:%M:%S")
+  end
   hour, minutes, _ = time.split(":")
   "#{hour}:#{minutes}"
 end

@@ -131,7 +131,18 @@ task :console do
   sh "irb -rubygems -r ./lib/#{name}.rb"
 end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 
 #############################################################################
 #
@@ -371,4 +382,25 @@ task :analysis do
 
   file.close
 end
+<<<<<<< HEAD
 >>>>>>> pod/jekyll-gemfile
+=======
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn

@@ -1,19 +1,47 @@
 require 'helper'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 class TestPathSanitization < JekyllUnitTest
 =======
 class TestPathSanitization < Test::Unit::TestCase
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+class TestPathSanitization < Test::Unit::TestCase
+>>>>>>> origin/v1-stable
+=======
+class TestPathSanitization < Test::Unit::TestCase
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
   context "on Windows with absolute source" do
     setup do
       @source = "C:/Users/xmr/Desktop/mpc-hc.org"
       @dest   = "./_site/"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
       allow(Dir).to receive(:pwd).and_return("C:/Users/xmr/Desktop/mpc-hc.org")
 =======
       stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+      stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
+>>>>>>> origin/v1-stable
+=======
+      stub(Dir).pwd { "C:/Users/xmr/Desktop/mpc-hc.org" }
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
     end
     should "strip drive name from path" do
       assert_equal "C:/Users/xmr/Desktop/mpc-hc.org/_site", Jekyll.sanitized_path(@source, @dest)

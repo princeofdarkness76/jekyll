@@ -78,6 +78,35 @@ module Jekyll
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
     def generate_url_from_drop(template)
       template.gsub(/:([a-z_]+)/.freeze) do |match|
         replacement = @placeholders.public_send(match.sub(':'.freeze, ''.freeze))
@@ -89,9 +118,37 @@ module Jekyll
       end.gsub(/\/\//.freeze, '/'.freeze)
     end
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> pod/jekyll-gemfile
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
     # Returns a sanitized String URL, stripping "../../" and multiples of "/",
     # as well as the beginning "/" so we can enforce and ensure it.
 =======

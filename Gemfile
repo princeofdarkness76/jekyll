@@ -2,6 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 source 'https://rubygems.org'
 gemspec name: 'jekyll'
 
@@ -76,6 +83,28 @@ end
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> origin/0.12.1-release
+<<<<<<< HEAD
 source "https://rubygems.org"
 gemspec
 >>>>>>> jekyll/0.12.1-release
+=======
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> origin/0.12.1-release
+source "https://rubygems.org"
+gemspec
+>>>>>>> jekyll/0.12.1-release
+source 'https://rubygems.org'
+m
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
+gem 'jekyll-gist'
+>>>>>>> pod/jekyll-glynn

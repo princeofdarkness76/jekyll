@@ -14,11 +14,23 @@ module Jekyll
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
     def strip_heredoc(str)
       str.gsub(/^[ \t]{#{(str.scan(/^[ \t]*(?=\S)/).min || "").size}}/, "")
 =======
 =======
 >>>>>>> origin/pull/cleanup-document__post_read
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/pull/cleanup-document__post_read
+=======
+>>>>>>> origin/pull/cleanup-document__post_read
+>>>>>>> pod/jekyll-glynn
     # Takes a slug and turns it into a simple title.
 
     def titleize_slug(slug)
@@ -26,6 +38,15 @@ module Jekyll
         val.capitalize!
       end.join(" ")
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pull/cleanup-document__post_read
+=======
+>>>>>>> origin/pull/cleanup-document__post_read
+=======
+>>>>>>> pod/jekyll-glynn
 >>>>>>> origin/pull/cleanup-document__post_read
 =======
 >>>>>>> origin/pull/cleanup-document__post_read
@@ -195,6 +216,14 @@ module Jekyll
           # and is allowed in both extN and NTFS.
           SLUGIFY_PRETTY_REGEXP
         end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
       # Strip according to the mode
       slug = string.gsub(re, '-')
@@ -202,6 +231,78 @@ module Jekyll
       # Remove leading/trailing hyphen
       slug.gsub!(/^\-|\-$/i, '')
 
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
+=======
+
+      # Strip according to the mode
+      slug = string.gsub(re, '-')
+
+      # Remove leading/trailing hyphen
+      slug.gsub!(/^\-|\-$/i, '')
+
+>>>>>>> jekyll/master
       slug.downcase! unless cased
       slug
     end

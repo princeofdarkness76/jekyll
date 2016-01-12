@@ -1,5 +1,10 @@
 ## 1.0.4 / 2013-07-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 
 <<<<<<< HEAD
 ### Minor Enhancements
@@ -54,8 +59,22 @@
   * Implement codeclimate platform (#4340)
   * Remove ObectSpace dumping and start using inherited, it's faster. (#4342)
   * Add script/travis so all people can play with Travis-CI images. (#4338)
+<<<<<<< HEAD
+=======
   * Move Cucumber to using RSpec-Expections and furthering JRuby support. (#4343)
+<<<<<<< HEAD
   * Rearrange Cucumber and add some flair. (#4347)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> jekyll/master
+=======
+  * Rearrange Cucumber and add some flair. (#4347)
+>>>>>>> jekyll/master
+=======
+  * Rearrange Cucumber and add some flair. (#4347)
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
 
 ### Site Enhancements
 
@@ -937,6 +956,7 @@
 
 ### Site Enhancements
 
+<<<<<<< HEAD
   * Document Kramdown's GFM parser option (#1791)
   * Move CSS to includes & update normalize.css to v2.1.3 (#1787)
   * Minify CSS only in production (#1803)
@@ -1016,15 +1036,30 @@
 
 =======
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 ## 1.5.1 / 2014-03-27
 
 ### Bug Fixes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
   * Only strip the drive name if it begins the string (#2176)
 =======
 * Only strip the drive name if it begins the string (#2176)
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+* Only strip the drive name if it begins the string (#2176)
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 
 ## 1.5.0 / 2014-03-24
 
@@ -1041,14 +1076,25 @@
 ### Development Fixes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
   * Lock `cucumber` at `1.3.11` (#2167)
 =======
   * Lock `cucmber` at `1.3.11` (#2167)
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+  * Lock `cucmber` at `1.3.11` (#2167)
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 
 ## 1.4.3 / 2014-01-13
 
 ### Bug Fixes
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -1057,6 +1103,73 @@
 
 >>>>>>> jekyll/v1-stable
 >>>>>>> pod/jekyll-gemfile
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> jekyll/v1-stable
+=======
+
+>>>>>>> jekyll/master
+=======
+
+>>>>>>> jekyll/master
+=======
+
+>>>>>>> jekyll/master
+=======
+
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
+  * Patch show-stopping security vulnerabilities (#1944)
+
+## 1.4.2 / 2013-12-16
+
+### Bug Fixes
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/v1-stable
+  * Turn on Maruku fenced code blocks by default (#1830)
+
+## 1.4.1 / 2013-12-09
+
+### Bug Fixes
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+  * Don't allow nil entries when loading posts (#1796)
+
+## 1.5.1 / 2014-03-27
+
+### Bug Fixes
+
+* Only strip the drive name if it begins the string (#2176)
+
+## 1.5.0 / 2014-03-24
+
+### Minor Enhancements
+
+  * Loosen `safe_yaml` dependency to `~> 1.0` (#2167)
+  * Bump `safe_yaml` dependency to `~> 1.0.0` (#1942)
+
+### Bug Fixes
+
+  * Fix issue where filesystem traversal restriction broke Windows (#2167)
+  * Lock `maruku` at `0.7.0` (#2167)
+
+### Development Fixes
+
+  * Lock `cucmber` at `1.3.11` (#2167)
+
+## 1.4.3 / 2014-01-13
+
+### Bug Fixes
+
   * Patch show-stopping security vulnerabilities (#1944)
 
 ## 1.4.2 / 2013-12-16
@@ -1069,6 +1182,27 @@
 
 ### Bug Fixes
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> origin/v1-stable
   * Don't allow nil entries when loading posts (#1796)
 
 ## 1.4.0 / 2013-12-07
@@ -1261,6 +1395,11 @@
   * Provide proper error handling for invalid file names in the include tag (#1494)
 
 ### Development Fixes
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> jekyll/1.0-branch
 
   * Remove redundant argument to Jekyll::Commands::New#scaffold_post_content (#1356)
   * Add new dependencies to the README (#1360)
@@ -1349,6 +1488,11 @@
   * Latest posts first in non-LSI `related_posts` (#1271)
 
 ### Development Fixes
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> origin/1.0-branch
 
   * Merge the theme and layout Cucumber steps into one step (#1151)
   * Restrict activesupport dependency to pre-4.0.0 to maintain compatibility with `<= 1.9.2`
@@ -1389,6 +1533,7 @@
   * Add suggestion for Xcode CLT install to troubleshooting page in docs (#1296)
   * Add 'Working with drafts' page to docs (#1289)
 <<<<<<< HEAD
+<<<<<<< HEAD
   * Add information about time zones to the documentation for a page's date (#1304)
 =======
   * Add information about time zones to the documentation for a page's
@@ -1399,6 +1544,50 @@
   * Require Liquid 2.5.1 (#1349)
 >>>>>>> origin/1.0-branch
 >>>>>>> pod/jekyll-gemfile
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  * Add information about time zones to the documentation for a page's
+    date (#1304)
+=======
+
+### Bug Fixes
+  * Require Liquid 2.5.1 (#1349)
+>>>>>>> origin/1.0-branch
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+=======
+  * Add information about time zones to the documentation for a page's date (#1304)
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
 
 ## 1.0.3 / 2013-06-07
 

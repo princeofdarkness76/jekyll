@@ -57,9 +57,18 @@ module Jekyll
 
           Jekyll.logger.info "Server address:", server_address_info(s, options)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jekyll/change-default-listening-host
 =======
 >>>>>>> origin/change-default-listening-host
+=======
+<<<<<<< HEAD
+>>>>>>> jekyll/change-default-listening-host
+=======
+>>>>>>> origin/change-default-listening-host
+=======
+>>>>>>> origin/change-default-listening-host
+>>>>>>> pod/jekyll-glynn
 
           server = WEBrick::HTTPServer.new(webrick_opts(opts)).tap { |o| o.unmount("") }
           server.mount(opts["baseurl"], Servlet, destination, file_handler_opts)
@@ -183,6 +192,11 @@ module Jekyll
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
         # Add SSL to the stack if the user triggers --enable-ssl and they
         # provide both types of certificates commonly needed.  Raise if they
         # forget to add one of the certificates.
@@ -195,6 +209,13 @@ module Jekyll
 =======
 =======
 >>>>>>> origin/add-support-for-webrick-file-precedence
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/add-support-for-webrick-file-precedence
+=======
+>>>>>>> origin/add-support-for-webrick-file-precedence
+>>>>>>> pod/jekyll-glynn
         # Allows files to be routed in a pretty URL in both default format
         # and in custom page/index.html format and while doing so takes into
         # consideration importance of blog.html > blog/ but not > blog/index.html

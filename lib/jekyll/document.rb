@@ -284,6 +284,14 @@ module Jekyll
 
     def post_read
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if relative_path =~ DATE_FILENAME_MATCHER
+        cats, date, slug, ext = $1, $2, $3, $4
+        merge_data!("date" => date) if !data['date'] || data['date'].to_i == site.time.to_i
+        merge_data!("slug" => slug, "ext"  => ext)
+=======
+>>>>>>> pod/jekyll-glynn
       if DATE_FILENAME_MATCHER =~ relative_path
         _, _, date, slug, ext = *relative_path.match(DATE_FILENAME_MATCHER)
         merge_data!({
@@ -295,12 +303,16 @@ module Jekyll
       end
       populate_categories
       populate_tags
+<<<<<<< HEAD
 =======
       if relative_path =~ DATE_FILENAME_MATCHER
         cats, date, slug, ext = $1, $2, $3, $4
         merge_data!("date" => date) if !data['date'] || data['date'].to_i == site.time.to_i
         merge_data!("slug" => slug, "ext"  => ext)
 >>>>>>> pod/jekyll-gemfile
+=======
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
 
       elsif DATELESS_FILENAME_MATCHER =~ relative_path
         cats, slug, ext = $1, $2, $3

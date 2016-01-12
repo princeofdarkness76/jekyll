@@ -16,6 +16,13 @@ matrix:
   allow_failures:
     - rvm: jruby-9.0.3.0
     - rvm: ruby-head
+<<<<<<< HEAD
+  exclude:
+  - rvm: jruby-9.0.3.0
+    env: TEST_SUITE=cucumber
+
+=======
+>>>>>>> jekyll/master
 env:
   matrix:
   - TEST_SUITE=test

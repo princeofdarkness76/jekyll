@@ -29,6 +29,21 @@ module Jekyll
         end
       end
 
+<<<<<<< HEAD
+=======
+      class << self
+        def source_cache
+          @@source_cache ||= {}
+        end
+      end
+
+      class << self
+        def source_cache
+          @@source_cache ||= {}
+        end
+      end
+
+>>>>>>> pod/jekyll-glynn
       def initialize(tag_name, markup, tokens)
         super
         matched = markup.strip.match(VARIABLE_SYNTAX)
@@ -110,9 +125,17 @@ eos
         end
       end
 
+<<<<<<< HEAD
       def tag_includes_dir(context)
         context.registers[:site].config['includes_dir'].freeze
       end
+=======
+      def render(context)
+        dir = File.join(File.realpath(context.registers[:site].source), INCLUDES_DIR)
+<<<<<<< HEAD
+>>>>>>> origin/v1-stable
+=======
+>>>>>>> origin/v1-stable
 
       def render(context)
 <<<<<<< HEAD
@@ -128,6 +151,11 @@ eos
 
         path = File.join(dir, file)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
         validate_path(path, dir, site.safe)
 
         # Add include to dependency tree
@@ -140,6 +168,15 @@ eos
 =======
         validate_path(path, dir, context.registers[:site].safe)
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+        validate_path(path, dir, context.registers[:site].safe)
+>>>>>>> origin/v1-stable
+=======
+        validate_path(path, dir, context.registers[:site].safe)
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 
         begin
           partial = load_cached_partial(path, context)
@@ -154,6 +191,11 @@ eos
       end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
       def load_cached_partial(path, context)
         context.registers[:cached_partials] ||= {}
         cached_partial = context.registers[:cached_partials]
@@ -182,6 +224,21 @@ eos
         elsif !File.exist?(path)
           raise IOError.new "Included file '#{path}' not found"
         end
+<<<<<<< HEAD
+=======
+=======
+      def validate_path(path, dir, safe)
+        if safe && !realpath_prefixed_with?(path, dir)
+          raise IOError.new "The included file '#{path}' should exist and should not be a symlink"
+        elsif !File.exist?(path)
+          raise IOError.new "Included file '#{path}' not found"
+        end
+      end
+
+      def realpath_prefixed_with?(path, dir)
+        File.exist?(path) && File.realpath(path).start_with?(dir)
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
       end
 
       def realpath_prefixed_with?(path, dir)
@@ -191,6 +248,18 @@ eos
 
       def path_relative_to_source(dir, path)
         File.join(@includes_dir, path.sub(Regexp.new("^#{dir}"), ""))
+=======
+      def validate_path(path, dir, safe)
+        if safe && !realpath_prefixed_with?(path, dir)
+          raise IOError.new "The included file '#{path}' should exist and should not be a symlink"
+        elsif !File.exist?(path)
+          raise IOError.new "Included file '#{path}' not found"
+        end
+      end
+
+      def realpath_prefixed_with?(path, dir)
+        File.exist?(path) && File.realpath(path).start_with?(dir)
+>>>>>>> origin/v1-stable
       end
 
       def realpath_prefixed_with?(path, dir)
@@ -200,6 +269,11 @@ eos
       # This method allows to modify the file content by inheriting from the class.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
       def read_file(file, context)
         File.read(file, file_read_opts(context))
 =======
@@ -210,6 +284,17 @@ eos
       def source(file, context)
         self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
 >>>>>>> origin/cache-includes
+<<<<<<< HEAD
+=======
+=======
+      def source(file, context)
+        self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
+>>>>>>> jekyll/cache-includes
+=======
+      def source(file, context)
+        self.class.source_cache[file] ||= File.read(file, file_read_opts(context))
+>>>>>>> origin/cache-includes
+>>>>>>> pod/jekyll-glynn
       end
     end
 

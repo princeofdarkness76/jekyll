@@ -86,6 +86,8 @@ SafeYAML::OPTIONS[:suppress_warnings] = true
 
 module Jekyll
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,8 +96,46 @@ module Jekyll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+<<<<<<< HEAD
 >>>>>>> pod/jekyll-gemfile
+=======
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
   # internal requires
   autoload :Cleaner,             'jekyll/cleaner'
   autoload :Collection,          'jekyll/collection'
@@ -186,6 +226,17 @@ module Jekyll
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> origin/0.12.1-release
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> origin/0.12.1-release
+>>>>>>> pod/jekyll-glynn
   VERSION = '0.12.1'
 
   # Default options. Overriden by values in _config.yml or command-line opts.
@@ -259,6 +310,21 @@ module Jekyll
 =======
   VERSION = '1.5.1'
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+  VERSION = '1.5.1'
+>>>>>>> origin/v1-stable
+=======
+  VERSION = '1.0.4'
+>>>>>>> jekyll/1.0-branch
+=======
+  VERSION = '1.0.4'
+>>>>>>> origin/1.0-branch
+=======
+  VERSION = '1.5.1'
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn
 
   # Public: Generate a Jekyll configuration Hash by merging the default
   # options with anything in _config.yml, and adding the given options on top.
@@ -334,6 +400,69 @@ module Jekyll
 
     # Conditional optimizations
     Jekyll::External.require_if_present('liquid-c')
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  end
+
+  # Get a subpath without any of the traversal nonsense.
+  #
+  # Returns a pure and clean path
+  def self.sanitized_path(base_directory, questionable_path)
+    clean_path = File.expand_path(questionable_path, "/")
+    clean_path.gsub!(/\A\w\:\//, '/')
+    unless clean_path.start_with?(base_directory)
+      File.join(base_directory, clean_path)
+    else
+      clean_path
+    end
+  end
+
+  # Get a subpath without any of the traversal nonsense.
+  #
+  # Returns a pure and clean path
+  def self.sanitized_path(base_directory, questionable_path)
+    clean_path = File.expand_path(questionable_path, "/")
+    clean_path.gsub!(/\A\w\:\//, '/')
+    unless clean_path.start_with?(base_directory)
+      File.join(base_directory, clean_path)
+    else
+      clean_path
+    end
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+  end
+
+  # Get a subpath without any of the traversal nonsense.
+  #
+  # Returns a pure and clean path
+  def self.sanitized_path(base_directory, questionable_path)
+    clean_path = File.expand_path(questionable_path, "/")
+    clean_path.gsub!(/\A\w\:\//, '/')
+    unless clean_path.start_with?(base_directory)
+      File.join(base_directory, clean_path)
+    else
+      clean_path
+    end
   end
 
   # Get a subpath without any of the traversal nonsense.

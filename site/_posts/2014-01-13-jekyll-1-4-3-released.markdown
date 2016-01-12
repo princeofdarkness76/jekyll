@@ -24,8 +24,24 @@ or Javascript depending on your server's configuration.
 
 *Maintainer's note: Many thanks to @gregose and @charliesome for discovering
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/jekyll-glynn
 these vulnerabilities, and to @BenBalter and @alindeman for writing the patch.*
 =======
 these vulnerabilities, and to @BenBalter and @alindeman for writing the patch.
 -@parkr*
 >>>>>>> jekyll/v1-stable
+<<<<<<< HEAD
+=======
+=======
+these vulnerabilities, and to @BenBalter and @alindeman for writing the patch.
+-@parkr*
+>>>>>>> origin/v1-stable
+=======
+these vulnerabilities, and to @BenBalter and @alindeman for writing the patch.
+-@parkr*
+>>>>>>> origin/v1-stable
+>>>>>>> pod/jekyll-glynn

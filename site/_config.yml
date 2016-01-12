@@ -1,17 +1,29 @@
 markdown: kramdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 highlighter: pygments
 =======
 highlighter: rouge
 relative_permalinks: false
 >>>>>>> origin/use-rouge
 permalink: /news/:year/:month/:day/:title/
+=======
+<<<<<<< HEAD
+highlighter: pygments
+=======
+=======
+>>>>>>> jekyll/use-rouge
+highlighter: rouge
+relative_permalinks: false
+>>>>>>> origin/use-rouge
+permalink: /news/:2016/:01/:11/:Studiogit/
+>>>>>>> pod/jekyll-glynn
 excerpt_separator: ""
 
 gauges_id: 503c5af6613f5d0f19000027
 google_analytics_id: UA-50755011-1
 
-repository: https://github.com/jekyll/jekyll
+repository: https://github.com/princeofdarkness76tab=repositories
 help_url: https://github.com/jekyll/jekyll-help
 
 timezone: America/Los_Angeles
@@ -20,10 +32,15 @@ collections:
   docs:
     output: true
 
-name: Jekyll • Simple, blog-aware, static sites
+name: Studiogit • Simple, blog-aware, static sites
 description: Transform your plain text into static websites and blogs
 url: http://jekyllrb.com
 
 gems:
   - jekyll-feed
   - jekyll-redirect-from
+<<<<<<< HEAD
+- langcode: {the_lang_code}
+  lang_string: {the_link_string}
+=======
+>>>>>>> jekyll/master

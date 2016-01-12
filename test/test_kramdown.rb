@@ -124,12 +124,30 @@ class TestKramdown < JekyllUnitTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> origin/0.12.1-release
+=======
+>>>>>>> pod/jekyll-glynn
 >>>>>>> jekyll/0.12.1-release
 =======
 >>>>>>> origin/0.12.1-release
 =======
 >>>>>>> jekyll/0.12.1-release
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> jekyll/0.12.1-release
+=======
+>>>>>>> pod/jekyll-glynn
 >>>>>>> origin/0.12.1-release
     end
   end

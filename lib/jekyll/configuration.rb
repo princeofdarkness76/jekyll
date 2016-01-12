@@ -145,6 +145,7 @@ module Jekyll
       config_files = override.delete('config')
       if config_files.to_s.empty?
 <<<<<<< HEAD
+<<<<<<< HEAD
         default = %w(yml yaml).find(-> { 'yml' }) do |ext|
           File.exist?(Jekyll.sanitized_path(source(override), "_config.#{ext}"))
 =======
@@ -155,6 +156,42 @@ module Jekyll
         else
           config_files = [config_file]
 >>>>>>> pod/jekyll-gemfile
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        config_file = config_file_with_flexible_extname('_config', override)
+        env_filename = config_file_with_flexible_extname(env_config_file_basename, override)
+        if File.exist? env_filename
+          config_files = [config_file, env_filename]
+        else
+          config_files = [config_file]
+=======
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+=======
+>>>>>>> jekyll/master
+        default = %w(yml yaml).find(-> { 'yml' }) do |ext|
+          File.exist?(Jekyll.sanitized_path(source(override), "_config.#{ext}"))
+>>>>>>> jekyll/master
+>>>>>>> pod/jekyll-glynn
         end
         @default_config_file = true
       end
